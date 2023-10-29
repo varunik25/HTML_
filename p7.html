@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <marquee bgcolor="pink"> this is marquee tag</marquee>
+    <marquee behavior="alternate">FIRST MARQUEE TAG</marquee>
+    <br><br><br>
+    <marquee behavior="slide">SECOND MARQUEE TAG</marquee>
+    <marquee behavior="scroll">SECOND MARQUEE TAG</marquee>
+    <br>
+    <marquee behavior="scroll" bgcolor="red" direction="left" id="test">marquee with direction attribute</marquee>
+    <br><br><br><hr>
+    <marquee behavior="alternate" scrollamount="10" direction="down" bgcolor="teal" height="100">MARQUEE TAG WITH HEIGHT ATTRIBUTE</marquee>
+    <script>
+        let marqueeTag= document.getElementById("test");
+        marqueeTag.onmouseover=function(){
+            marqueeTag.stop();
+        }
+        marqueeTag.onmouseleave=function(){
+            marqueeTag.start();
+        }
+    </script>
+    
+
+</body>
+</html>
